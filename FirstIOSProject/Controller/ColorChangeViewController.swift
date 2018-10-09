@@ -11,6 +11,11 @@ import UIKit
 public class ColorChangeViewController: UIViewController
 {
 
+    private lazy var myColor : ColorTool = ColorTool()
+    @IBOutlet weak var firstButton : UIButton!
+    //lazy means "Only inititialize it when it's time to use it"
+    //avoids null pointer exceptions
+    
     public override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
@@ -18,5 +23,10 @@ public class ColorChangeViewController: UIViewController
         //typically from a nib.
     }
 
+    @IBAction func colorClick(_ sender: UIButton) -> Void
+    {
+        self.view.backgroundColor = myColor.createRandomColor()
+        firstButton.backgroundColor = myColor.createRandomColor()
+    }
 }
 

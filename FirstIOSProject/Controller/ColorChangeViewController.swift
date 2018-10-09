@@ -16,6 +16,7 @@ public class ColorChangeViewController: UIViewController
     //lazy means "Only inititialize it when it's time to use it"
     //avoids null pointer exceptions
     
+    //parent class (ColorChangeViewController) has the same method so we override
     public override func viewDidLoad() -> Void
     {
         super.viewDidLoad()

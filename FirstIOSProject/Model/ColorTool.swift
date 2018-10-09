@@ -22,6 +22,5 @@ public class ColorTool
         return UIColor(red: redPercent, green: greenPercent, blue: bluePercent, alpha: CGFloat(100))
         //alpha on color is opacity (set to 100%)
         
-        
     }
 }
